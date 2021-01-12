@@ -7,7 +7,6 @@ struct Person {
 
 
 int findLargestPossiblePeopleCount(vector<Person> people) {
-    unordered_map<Person> exclusionList;
     vector<int> peopleSortedByHeight = people;
     std::sort(peopleSortedByHeight.begin(), peopleSortedByHeight.end(), [](const Person& a, const Person& b) {return a.height>b.height});
     
